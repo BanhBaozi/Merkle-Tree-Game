@@ -16,16 +16,15 @@ public class MonitorThread implements Runnable {
                     utils.print("The roots don't match: You lose!\n");
 
                     /*---------------------DEBUG TESTS------------------- */
-                    utils.printList(MerkleThread.grabbedWords); // test print to see what's in my ArrayList
-                    utils.print("Actual Root: " +MerkleManager.sMerkleRoot ); // test print to see what the actual merkle root value is
-                    utils.print("Your guessed root: " +MerkleManager.sEnteredExpectedRoot); // test print for users guess of merkle root
+                    utils.printList(MerkleThread.grabbedWords); // DEBUG: test print to see what's in my ArrayList
+                    utils.print("Actual Root: " +MerkleManager.sMerkleRoot ); // DEBUG: test print to see what the actual merkle root value is
+                    utils.print("Your guessed root: " +MerkleManager.sEnteredExpectedRoot); //DEBUG:  test print for users guess of merkle root
 
                     System.exit(0); // exit program
                 }
             }
             else if(MerkleManager.iStrike == 3){
                 utils.print("3 Strikes: you lost!");
-                utils.printList(MerkleThread.grabbedWords); // test print to see what's in my ArrayList
                 System.exit(0); // exit program
             }
 

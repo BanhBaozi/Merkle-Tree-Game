@@ -17,7 +17,7 @@ public class MerkleThread implements Runnable{
 
             // validate user input
             if(sNewWord != null){
-                utils.print("Merkle grabbed a word");
+                utils.print("[Merkle] grabbed word");
                 grabbedWords.add(sNewWord); // add grabbed word to list
                 if(grabbedWords.size() == iMerkleTreeInputs){
                     // set the sMerkleRoot to the generated merkle root value by getMerkleNode

@@ -2,13 +2,13 @@ public class MerkleManager_Test {
 
     public static void main(String[] args){
 
-        MerkleManager merkleManager = new MerkleManager();
-        merkleManager.manageFunction();
+        MerkleManager oMerkleManager = new MerkleManager();
+        oMerkleManager.manageFunction();
     }
 }
 
 /*
-   HASH VALUES
+   ---------------------- HASH VALUE GUIDE ----------------------------
 
    LEAVES
 

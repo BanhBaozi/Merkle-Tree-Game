@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class RogueThread implements Runnable {
 
@@ -17,7 +16,7 @@ public class RogueThread implements Runnable {
 
             // validate user input
             if(sNewWord != null){
-                utils.print("STRIKE!");
+                utils.print("[Rogue] grabbed word: STRIKE!");
                 MerkleManager.iStrike++  ; // strike incrementer to end game
             }
 
